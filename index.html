@@ -30,7 +30,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient-start': '#FF8938 ',
+            'gradient-end': '#F00',
             'paragraph-color': '#777',
           }
         }
@@ -41,17 +42,19 @@
 
 <body class="font-manrope">
   <header class="container mx-auto">
-    <div class="hero">
-      <div class="hero-content flex-col lg:flex-row">
+    <div class="my-16">
+      <div class="flex items-center justify-between flex-col lg:flex-row">
         <div>
           <h1 class="text-7xl font-extrabold">It's good <br>
             tea time at The <br>Tea House</h1>
           <p class="py-6 text-lg font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
             Taste Buds.</p>
-          <button class="btn btn-primary font-bold text-xl">Explore More</button>
+          <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end font-bold text-xl text-white">Explore
+            More <i class="fa-solid fa-arrow-trend-up"></i>
+          </button>
         </div>
         <div>
-          <img src="images/banner.png" class="max-w-sm" />
+          <img src="images/banner.png" class="" />
           <!-- rating badge -->
           <div class="flex items-center gap-3 drop-shadow-lg bg-white p-5 w-64 -mt-16">
             <i class="fa-solid fa-star text-5xl text-[#FFF082]"></i>
@@ -144,7 +147,7 @@
 
     <!-- super clients -->
     <section
-      class="my-24 container mx-auto rounded-xl bg-gradient-to-r from-[#F00] to-[#FF8938] px-20 py-24 flex flex-col md:flex-row lg:flex-row gap-14">
+      class="my-24 container mx-auto rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-20 py-24 flex flex-col md:flex-row lg:flex-row gap-14">
       <div class="flex items-center lg:pr-10">
         <div>
           <h2 class="text-5xl font-extrabold text-[#F4F4F4] mb-5">
@@ -203,11 +206,64 @@
         </div>
       </div>
     </section>
-
-    
   </main>
 
-  <footer></footer>
+  <footer class="bg-gradient-to-r from-[#ff88381a] to-[#ff000015] text-base-content py-32 ">
+    <div class="container mx-auto">
+      <div class="mb-24 flex justify-between">
+        <img src="images/cup.png" alt="cup">
+        <p>
+          <span class="mr-10">Ready to get started?</span>
+          <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white ">Get Started</button>
+        </p>
+      </div>
+      <div class="footer">
+        <nav>
+          <header class="footer-title">Services</header>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Company</header>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Legal</header>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <header class="footer-title">Newsletter</header>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input type="text" placeholder="Email address"
+                class="py-4 bg-transparent border-b-2 border-red-700 outline-none" />
+              <button class="btn rounded-full  bg-gradient-to-r from-gradient-start to-gradient-end text-white"><i
+                  class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="mt-12 space-x-6">
+              <a href=""><i class="text-lg fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="text-lg fa-brands fa-twitter"></i></a>
+              <a href=""><i class="text-lg fa-brands fa-instagram"></i></a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <aside class="mt-14 text-center">
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+      </aside>
+    </div>
+  </footer>
 </body>
 
 </html>
